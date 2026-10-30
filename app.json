@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "ShieldGuard Mobile",
+    "slug": "shield-guard-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0F172A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zbrains.shieldguard",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ShieldGuard audits whether apps can access your camera in the background.",
+        "NSMicrophoneUsageDescription": "ShieldGuard audits microphone access permissions.",
+        "NSLocationWhenInUseUsageDescription": "ShieldGuard checks location telemetry privacy."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.zbrains.shieldguard",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
